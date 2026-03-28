@@ -9,6 +9,18 @@ const commands = {
 
 type OS = keyof typeof commands;
 
+// TODO: Fix OS detection. navigator.platform is deprecated and unreliable.
+// Proper Next.js pattern: read User-Agent server-side in a Server Component
+// using headers() from "next/headers", then pass the detected OS as a prop:
+//
+//   // page.tsx (Server Component)
+//   import { headers } from "next/headers";
+//   const ua = (await headers()).get("user-agent") ?? "";
+//   const os = /windows/i.test(ua) ? "windows" : "unix";
+//   return <InstallCommand defaultOS={os} />;
+//
+// This avoids hydration mismatch since server and client agree on the value.
+// navigator.userAgentData?.platform is the client-side modern API fallback.
 function detectOS(): OS {
   if (typeof navigator === "undefined") return "unix";
   const platform = navigator.platform.toLowerCase();

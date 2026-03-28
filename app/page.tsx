@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { HeroTerminal } from "./hero-terminal";
 import { InstallCommand } from "./install-command";
 
 export default function Home() {
@@ -49,68 +50,8 @@ export default function Home() {
           <InstallCommand />
         </div>
 
-        {/* Terminal Mockup */}
-        <div className="flex flex-col w-full lg:w-140 rounded-xl bg-[#0c0c0c] border border-solid border-[#222222] lg:shrink-0 p-4 overflow-hidden">
-          <div className="flex items-start rounded-sm py-1.5 px-3 gap-2 bg-[#0c0c0c]">
-            <span className="font-mono text-[12px] leading-[1.6] text-[#CCCCCC] font-bold shrink-0">
-              ›
-            </span>
-            <span className="font-mono text-[12px] leading-[1.6] text-white font-semibold truncate lg:overflow-visible lg:text-clip">
-              export this to damelo mcp.
-            </span>
-          </div>
-          <div className="flex flex-col pt-1.5 gap-0.5">
-            <div className="flex items-start gap-2 min-w-0">
-              <div className="w-1.75 h-1.75 shrink-0 mt-1.25 rounded-full bg-[#CCCCCC]" />
-              <span className="font-mono text-[12px] leading-[1.6] text-[#CCCCCC] truncate lg:overflow-visible lg:text-clip">
-                share – export_session (MCP)
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col pt-1 gap-0.5">
-            <div className="flex items-start gap-2 min-w-0">
-              <span className="font-mono text-[12px] leading-[1.6] text-[#E06C75] font-bold shrink-0">
-                ✱
-              </span>
-              <span className="font-mono text-[12px] leading-[1.6] text-[#E06C75] font-semibold shrink-0">
-                Beboppin&apos;
-              </span>
-              <span className="font-mono text-[12px] leading-[1.6] text-[#777777] truncate lg:overflow-visible lg:text-clip">
-                (41s ··· ↓ 129 tokens)
-              </span>
-            </div>
-            <div className="flex pl-5 gap-1.5 min-w-0">
-              <span className="font-mono text-[12px] leading-[1.6] text-[#555555] shrink-0">
-                L
-              </span>
-              <span className="font-mono text-[12px] leading-[1.6] text-[#777777] truncate lg:overflow-visible lg:text-clip">
-                Tip: Use /btw to ask a quick side question...
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col pt-1.5 gap-1">
-            <div className="flex items-start gap-2 min-w-0">
-              <div className="w-1.75 h-1.75 shrink-0 mt-1.25 rounded-full bg-[#CCCCCC]" />
-              <span className="font-mono text-[12px] leading-[1.6] text-[#CCCCCC] truncate lg:overflow-visible lg:text-clip">
-                Exported: https://damelo.sh/reports/doasfrancisco/1b5933e2
-              </span>
-            </div>
-            <div className="flex items-center pt-2 gap-2">
-              <span className="font-mono text-[12px] leading-[1.6] text-[#CCCCCC] font-bold shrink-0">
-                ›
-              </span>
-              <div className="w-1.75 h-3.5 bg-[#CCCCCC] shrink-0" />
-            </div>
-            <div className="flex justify-between pt-1.5 border-t border-t-[#1A1A1A]">
-              <span className="font-mono text-[11px] leading-[1.6] text-[#5B8DEF] underline shrink-0">
-                matias/damelo
-              </span>
-              <span className="font-mono text-[11px] leading-[1.6] text-[#555555] shrink-0">
-                26%
-              </span>
-            </div>
-          </div>
-        </div>
+        {/* Terminal Mockup — animated */}
+        <HeroTerminal />
       </main>
 
       {/* How to use */}
