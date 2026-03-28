@@ -50,50 +50,49 @@ export default function Home() {
         </div>
 
         {/* Terminal Mockup */}
-        <div className="flex flex-col w-full lg:w-140 rounded-xl bg-[#0c0c0c] border border-solid border-[#222222] shrink-0 p-4 overflow-x-auto">
+        <div className="flex flex-col w-full lg:w-140 rounded-xl bg-[#0c0c0c] border border-solid border-[#222222] lg:shrink-0 p-4 overflow-hidden">
           <div className="flex items-start rounded-sm py-1.5 px-3 gap-2 bg-[#0c0c0c]">
             <span className="font-mono text-[12px] leading-[1.6] text-[#CCCCCC] font-bold shrink-0">
               ›
             </span>
-            <span className="font-mono text-[12px] leading-[1.6] text-white font-semibold shrink-0">
+            <span className="font-mono text-[12px] leading-[1.6] text-white font-semibold truncate">
               export this to damelo mcp.
             </span>
           </div>
           <div className="flex flex-col pt-1.5 gap-0.5">
-            <div className="flex items-start gap-2">
+            <div className="flex items-start gap-2 min-w-0">
               <div className="w-1.75 h-1.75 shrink-0 mt-1.25 rounded-full bg-[#CCCCCC]" />
-              <span className="font-mono text-[12px] leading-[1.6] text-[#CCCCCC] shrink-0">
+              <span className="font-mono text-[12px] leading-[1.6] text-[#CCCCCC] truncate">
                 share – export_session (MCP)
               </span>
             </div>
           </div>
           <div className="flex flex-col pt-1 gap-0.5">
-            <div className="flex items-start gap-2">
+            <div className="flex items-start gap-2 min-w-0">
               <span className="font-mono text-[12px] leading-[1.6] text-[#E06C75] font-bold shrink-0">
                 ✱
               </span>
               <span className="font-mono text-[12px] leading-[1.6] text-[#E06C75] font-semibold shrink-0">
                 Beboppin&apos;
               </span>
-              <span className="font-mono text-[12px] leading-[1.6] text-[#777777] shrink-0">
+              <span className="font-mono text-[12px] leading-[1.6] text-[#777777] truncate">
                 (41s ··· ↓ 129 tokens)
               </span>
             </div>
-            <div className="flex pl-5 gap-1.5">
+            <div className="flex pl-5 gap-1.5 min-w-0">
               <span className="font-mono text-[12px] leading-[1.6] text-[#555555] shrink-0">
                 L
               </span>
-              <span className="font-mono text-[12px] leading-[1.6] text-[#777777] shrink-0">
-                Tip: Use /btw to ask a quick side question without interrupting
-                ...
+              <span className="font-mono text-[12px] leading-[1.6] text-[#777777] truncate">
+                Tip: Use /btw to ask a quick side question...
               </span>
             </div>
           </div>
           <div className="flex flex-col pt-1.5 gap-1">
-            <div className="flex items-start gap-2">
+            <div className="flex items-start gap-2 min-w-0">
               <div className="w-1.75 h-1.75 shrink-0 mt-1.25 rounded-full bg-[#CCCCCC]" />
-              <span className="font-mono text-[12px] leading-[1.6] text-[#CCCCCC] shrink-0">
-                Exported: https://damelo.sh/reports/doasfrancisco/1b5933e2
+              <span className="font-mono text-[12px] leading-[1.6] text-[#CCCCCC] truncate">
+                Exported: https://damelo.sh/reports/doasf...
               </span>
             </div>
             <div className="flex items-center pt-2 gap-2">
@@ -140,25 +139,25 @@ export default function Home() {
               Just ask Claude to export, import, or browse sessions. The MCP
               handles everything behind the scenes.
             </p>
-            <div className="flex flex-col rounded-[10px] py-4 px-5 gap-1 bg-black font-mono overflow-x-auto">
+            <div className="flex flex-col rounded-[10px] py-4 px-5 gap-1 bg-black font-mono overflow-hidden">
               <div className="flex rounded-[3px] py-1 px-2 gap-2 bg-[#0c0c0c]">
                 <span className="text-[12px] leading-[1.6] text-[#CCCCCC] font-bold shrink-0">
                   ›
                 </span>
-                <span className="text-[12px] leading-[1.6] text-white font-semibold shrink-0">
+                <span className="text-[12px] leading-[1.6] text-white font-semibold truncate">
                   export this to damelo
                 </span>
               </div>
-              <div className="flex items-start pt-1.5 gap-2">
+              <div className="flex items-start pt-1.5 gap-2 min-w-0">
                 <div className="w-1.75 h-1.75 mt-1.25 shrink-0 rounded-full bg-[#CCCCCC]" />
-                <span className="text-[12px] leading-[1.6] text-[#CCCCCC] shrink-0">
+                <span className="text-[12px] leading-[1.6] text-[#CCCCCC] truncate">
                   share – export_session (MCP)
                 </span>
               </div>
-              <div className="flex items-start pt-1 gap-2">
+              <div className="flex items-start pt-1 gap-2 min-w-0">
                 <div className="w-1.75 h-1.75 mt-1.25 shrink-0 rounded-full bg-[#CCCCCC]" />
-                <span className="text-[12px] leading-[1.6] text-[#CCCCCC] shrink-0">
-                  Exported: https://damelo.sh/reports/doasfrancisco/1b59
+                <span className="text-[12px] leading-[1.6] text-[#CCCCCC] truncate">
+                  Exported: https://damelo.sh/reports/doasf...
                 </span>
               </div>
               <div className="flex items-center pt-1.5 gap-2">
@@ -194,45 +193,44 @@ export default function Home() {
               Run the slash command. It exports in the background while you keep
               working.
             </p>
-            <div className="flex flex-col rounded-[10px] py-4 px-5 gap-1 bg-black font-mono overflow-x-auto">
+            <div className="flex flex-col rounded-[10px] py-4 px-5 gap-1 bg-black font-mono overflow-hidden">
               <div className="flex rounded-[3px] py-1 px-2 gap-2 bg-[#0c0c0c]">
                 <span className="text-[12px] leading-[1.6] text-[#CCCCCC] font-bold shrink-0">
                   ›
                 </span>
-                <span className="text-[12px] leading-[1.6] text-white font-semibold shrink-0">
+                <span className="text-[12px] leading-[1.6] text-white font-semibold truncate">
                   /tomalo
                 </span>
               </div>
-              <div className="flex items-start pt-1.5 gap-2">
+              <div className="flex items-start pt-1.5 gap-2 min-w-0">
                 <div className="w-1.75 h-1.75 mt-1.25 shrink-0 rounded-full bg-[#CCCCCC]" />
-                <span className="text-[12px] leading-[1.6] text-[#CCCCCC] shrink-0">
+                <span className="text-[12px] leading-[1.6] text-[#CCCCCC] truncate">
                   session-exporter(Export session to D&aacute;melo)
                 </span>
               </div>
-              <div className="flex pl-5 gap-1.5">
+              <div className="flex pl-5 gap-1.5 min-w-0">
                 <span className="text-[12px] leading-[1.6] text-[#555555] shrink-0">
                   L
                 </span>
-                <span className="text-[12px] leading-[1.6] text-[#777777] shrink-0">
+                <span className="text-[12px] leading-[1.6] text-[#777777] truncate">
                   Backgrounded agent (↓ to manage)
                 </span>
               </div>
-              <div className="flex items-start pt-1 gap-2">
+              <div className="flex items-start pt-1 gap-2 min-w-0">
                 <div className="w-1.75 h-1.75 mt-1.25 shrink-0 rounded-full bg-[#CCCCCC]" />
-                <span className="text-[12px] leading-[1.6] text-[#CCCCCC] shrink-0">
-                  Exporting in the background. I&apos;ll let you know when
-                  it&apos;s done.
+                <span className="text-[12px] leading-[1.6] text-[#CCCCCC] truncate">
+                  Exporting in the background. I&apos;ll let you know...
                 </span>
               </div>
-              <div className="flex items-start pt-1 gap-2">
+              <div className="flex items-start pt-1 gap-2 min-w-0">
                 <div className="w-1.75 h-1.75 mt-1.25 shrink-0 rounded-full bg-[#4EC86C]" />
-                <span className="text-[12px] leading-[1.6] text-[#4EC86C] shrink-0">
+                <span className="text-[12px] leading-[1.6] text-[#4EC86C] truncate">
                   Agent &quot;Export session to D&aacute;melo&quot; completed
                 </span>
               </div>
-              <div className="flex items-start pt-1 gap-2">
+              <div className="flex items-start pt-1 gap-2 min-w-0">
                 <div className="w-1.75 h-1.75 mt-1.25 shrink-0 rounded-full bg-[#CCCCCC]" />
-                <span className="text-[12px] leading-[1.6] text-[#CCCCCC] shrink-0">
+                <span className="text-[12px] leading-[1.6] text-[#CCCCCC] truncate">
                   Export done.
                 </span>
               </div>
@@ -256,13 +254,13 @@ export default function Home() {
                 <span className="font-mono text-[12px] leading-[1.6] text-[#CCCCCC] shrink-0">
                   ›
                 </span>
-                <span className="font-mono text-[12px] leading-[1.6] text-white font-semibold shrink-0">
+                <span className="font-mono text-[12px] leading-[1.6] text-white font-semibold truncate">
                   export this to damelo
                 </span>
               </div>
               <div className="flex items-start pt-1 gap-2">
                 <div className="shrink-0 mt-1.25 rounded-full bg-[#CCCCCC] size-1.5" />
-                <span className="font-mono text-[12px] leading-[1.6] text-[#777777] shrink-0">
+                <span className="font-mono text-[12px] leading-[1.6] text-[#777777] truncate">
                   share – export_session (MCP)
                 </span>
               </div>
@@ -280,13 +278,13 @@ export default function Home() {
                 <span className="font-mono text-[12px] leading-[1.6] text-[#CCCCCC] shrink-0">
                   ›
                 </span>
-                <span className="font-mono text-[12px] leading-[1.6] text-white font-semibold shrink-0">
+                <span className="font-mono text-[12px] leading-[1.6] text-white font-semibold truncate">
                   show me team sessions
                 </span>
               </div>
               <div className="flex items-start pt-1 gap-2">
                 <div className="shrink-0 mt-1.25 rounded-full bg-[#CCCCCC] size-1.5" />
-                <span className="font-mono text-[12px] leading-[1.6] text-[#777777] shrink-0">
+                <span className="font-mono text-[12px] leading-[1.6] text-[#777777] truncate">
                   share – list_team_sessions (MCP)
                 </span>
               </div>
@@ -304,13 +302,13 @@ export default function Home() {
                 <span className="font-mono text-[12px] leading-[1.6] text-[#CCCCCC] shrink-0">
                   ›
                 </span>
-                <span className="font-mono text-[12px] leading-[1.6] text-white font-semibold shrink-0">
+                <span className="font-mono text-[12px] leading-[1.6] text-white font-semibold truncate">
                   import carlos&apos;s last session
                 </span>
               </div>
               <div className="flex items-start pt-1 gap-2">
                 <div className="shrink-0 mt-1.25 rounded-full bg-[#CCCCCC] size-1.5" />
-                <span className="font-mono text-[12px] leading-[1.6] text-[#777777] shrink-0">
+                <span className="font-mono text-[12px] leading-[1.6] text-[#777777] truncate">
                   share – import_session (MCP)
                 </span>
               </div>
