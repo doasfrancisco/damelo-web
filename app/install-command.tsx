@@ -28,8 +28,8 @@ export function InstallCommand() {
 
   return (
     <>
-      {/* OS Tabs */}
-      <div className="flex items-center">
+      {/* OS Tabs - hidden until OS detection is fixed */}
+      <div className="hidden items-center">
         <button
           onClick={() => setOs("unix")}
           className={`flex items-center justify-center py-2.5 px-6 rounded-l-lg cursor-pointer transition-colors ${
