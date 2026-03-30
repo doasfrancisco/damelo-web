@@ -3,8 +3,8 @@
 import { useState } from "react";
 
 const commands = {
-  unix: "npx @damelo/setup",
-  windows: "npx @damelo/setup",
+  unix: "npx damelo",
+  windows: "npx damelo",
 } as const;
 
 type OS = keyof typeof commands;

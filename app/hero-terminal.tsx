@@ -197,7 +197,7 @@ export function HeroTerminal() {
               className="terminal-line flex justify-between pt-1.5 border-t border-t-[#1A1A1A]"
               style={{ animationDelay: delay }}
             >
-              <span className="font-mono text-[11px] leading-[1.6] text-[#5B8DEF] underline shrink-0">
+              <span className="font-mono text-[11px] leading-[1.6] text-[#4EC86C] shrink-0">
                 matias/damelo
               </span>
               <span className="font-mono text-[11px] leading-[1.6] text-[#555555] shrink-0">

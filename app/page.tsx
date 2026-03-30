@@ -116,7 +116,7 @@ export default function Home() {
                 <div className="w-1.75 h-3.5 bg-[#CCCCCC] shrink-0" />
               </div>
               <div className="flex justify-between pt-1 border-t border-t-[#1A1A1A]">
-                <span className="text-[11px] leading-[1.6] text-[#5B8DEF] underline shrink-0">
+                <span className="text-[11px] leading-[1.6] text-[#4EC86C] shrink-0">
                   matias/damelo
                 </span>
                 <span className="text-[11px] leading-[1.6] text-[#555555] shrink-0">
