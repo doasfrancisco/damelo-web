@@ -21,7 +21,9 @@ const lines = [
   },
   {
     type: "result" as const,
-    content: "Exported: https://damelo.sh/reports/doasfrancisco/1b5933e2",
+    content: "Exported: ",
+    url: "https://damelo.sh/reports/doasfrancisco/37bbfdc4-f961-4b66-b016-bb6ffd2bed22_20260330_152905",
+    urlLabel: "damelo.sh/r/37bbfdc4",
   },
   {
     type: "cursor" as const,
@@ -157,6 +159,16 @@ export function HeroTerminal() {
                 <div className="w-1.75 h-1.75 shrink-0 mt-1.25 rounded-full bg-[#CCCCCC]" />
                 <span className="font-mono text-[12px] leading-[1.6] text-[#CCCCCC] truncate lg:overflow-visible lg:text-clip">
                   {line.content}
+                  {line.url && (
+                    <a
+                      href={line.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#5B8DEF] underline hover:opacity-80"
+                    >
+                      {line.urlLabel}
+                    </a>
+                  )}
                 </span>
               </div>
             </div>

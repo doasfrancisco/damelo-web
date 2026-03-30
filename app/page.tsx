@@ -98,7 +98,15 @@ export default function Home() {
               <div className="flex items-start pt-1 gap-2 min-w-0">
                 <div className="w-1.75 h-1.75 mt-1.25 shrink-0 rounded-full bg-[#CCCCCC]" />
                 <span className="text-[12px] leading-[1.6] text-[#CCCCCC] truncate lg:overflow-visible lg:text-clip">
-                  Exported: https://damelo.sh/reports/doasfrancisco/1b5933e2
+                  Exported:{" "}
+                  <a
+                    href="https://damelo.sh/reports/doasfrancisco/37bbfdc4-f961-4b66-b016-bb6ffd2bed22_20260330_152905"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#5B8DEF] underline hover:opacity-80"
+                  >
+                    damelo.sh/r/37bbfdc4
+                  </a>
                 </span>
               </div>
               <div className="flex items-center pt-1.5 gap-2">
